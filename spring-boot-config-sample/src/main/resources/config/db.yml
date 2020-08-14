@@ -1,0 +1,13 @@
+db:
+  host: localhost
+  port: 3306
+  db-name: test
+  username: root
+  password: 123456
+  connPoolList:
+    - type: type1
+      name: name1
+    - type: type2
+      name: name2
+    - type: type3
+      name: name3

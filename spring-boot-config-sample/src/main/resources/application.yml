@@ -1,0 +1,27 @@
+
+erwin:
+  name: 冯文议
+  age: 20
+  sex: 男
+  english-name: Erwin Feng
+  birthday: 1992/02/26
+  like: movie,game,music,tea,travel
+  visitedCities: 巴中,揭阳,广州,从化,成都,三亚,上海,杭州,北京
+  moreOther: {myWeb:'https://fengwenyi.com',github:'https://github.com/fengwenyi'}
+
+author:
+  name: 冯文议-yml
+  age: 20
+  sex: 男
+  english-name: Erwin Feng
+  birthday: 1992/02/26
+  like:
+    - movie
+    - game
+    - music
+    - tea
+    - travel
+  visitedCities: 巴中,揭阳,广州,从化,成都,三亚,上海,杭州,北京
+  moreOther:
+    myWeb: https://fengwenyi.com
+    github: https://github.com/fengwenyi
