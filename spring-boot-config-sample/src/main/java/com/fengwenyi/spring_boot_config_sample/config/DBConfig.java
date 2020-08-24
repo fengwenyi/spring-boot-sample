@@ -3,6 +3,7 @@ package com.fengwenyi.spring_boot_config_sample.config;
 import com.fengwenyi.spring_boot_config_sample.support.YamlPropertySourceFactory;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.NestedConfigurationProperty;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
@@ -17,7 +18,7 @@ import java.util.List;
 @Configuration
 @ConfigurationProperties(prefix = "db")
 //@PropertySource({"classpath:config/db.properties"})
-@PropertySource(value = {"classpath:config/db.yml"}, factory = YamlPropertySourceFactory.class)
+//@PropertySource(value = {"classpath:config/db.yml"}, factory = YamlPropertySourceFactory.class)
 public class DBConfig implements Serializable {
 
     private static final long serialVersionUID = -6527591545525817929L;
@@ -37,5 +38,6 @@ public class DBConfig implements Serializable {
     /** 密码 */
     private String password;
 
+    @NestedConfigurationProperty
     private List<ConnPool> connPoolList;
 }
